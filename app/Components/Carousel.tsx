@@ -22,7 +22,7 @@ base: string,
 socials: any[]
 }
 
-const items = [
+const items:itemProps[] = [
     {
         title: "Iron Blade",
         image: download6,
@@ -52,7 +52,7 @@ const items = [
 },
 {
         title: "Zombie plant 2",
-        image: download6,
+        image: download9,
         dec: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,  ",
         total: "100k",
         valuation: "23M",

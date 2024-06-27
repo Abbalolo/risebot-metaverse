@@ -128,7 +128,7 @@ function StatisticChart() {
             <div className="grid md:grid-cols-1 grid-cols-2 gap-3">
                 {chartData.map((item, index) => (
                     <div key={index} className="flex items-center gap-2 text-[12px]">
-                        <Image src={item.image} className='h-[25px] w-[25px] md:h-[30px] md:w-[30px]     object-contain' alt={item.name} />
+                        <Image src={item.image} className='h-[35px] w-[35px] md:h-[40px] md:w-[40px]     object-contain' alt={item.name} />
                         <div className="flex flex-col">
                             <h3 className='text-gray-500'>{item.name}</h3>
                             <p className='text-white'>{item.figure}</p>

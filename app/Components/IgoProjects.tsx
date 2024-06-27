@@ -57,26 +57,26 @@ const  coins:coinsTypes[] = [
 
 function IgoProjects() {
   return (
-    <div className='flex flex-col gap-10 md:mt-10'>
+    <div className='flex flex-col gap-10 md:mt-20'>
        
 {coins.map((coin, index) => (
 <div key={index} className="reltaive glassbg justify-between flex flex-col md:flex-row items-center px-5 py-5 md:py-0  gap-3 md:gap-0 ">
     <div className="flex flex-col justify-center  md:items-start items-center md:flex-row gap-3 md:-translate-y-7">
- <Image src={coin.image} className="w-[50px] md:w-[65px] object-contain h-full " alt="photo" />
- <h3 className='text-sm text-white font-extrabold'>{coin.name}</h3>
+ <Image src={coin.image} className="w-[60px] md:w-[70px] object-contain h-full " alt="photo" />
+ <h3 className=' text-white font-extrabold'>{coin.name}</h3>
     </div>
 
-<div className="flex flex-col items-center gap-1 text-[12px]">
+<div className="flex flex-col items-center gap-1 ">
     <h3 className=' text-gray-500'>Total raise</h3>
   <p className='text-white '>{coin.raise}</p>
 </div>
-<div className="flex flex-col items-center gap-1 text-[12px]">
+<div className="flex flex-col items-center gap-1 ">
     <h3 className=' text-gray-500'>Price</h3>
   <p className='text-white '>{coin.price}</p>
 </div>
-<div className="flex flex-col items-center gap-1 text-[12px]">
+<div className="flex flex-col items-center gap-1 ">
     <h3 className=' text-gray-500'>Claim In</h3>
- <div className="flex items-center gap-2 text-[12px]">
+ <div className="flex items-center gap-2 ">
  {coin.claimIn.map((claim, index) => (
 
   <p key={index} className='text-white'>:{claim}</p>
@@ -86,7 +86,7 @@ function IgoProjects() {
 <div className="">
 <div className="flex items-center justify-center gap-2">
         {coin.socials.map((icon, index) => (
-          <div key={index} className="w-[35px] h-[35px] border border-gray-400 text-gray-400 rounded-full flex items-center justify-center">{icon}</div>
+          <div key={index} className="w-[40px] h-[40px] border border-gray-400 text-gray-400 rounded-full flex items-center justify-center">{icon}</div>
         ))}
 
       </div>

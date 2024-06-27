@@ -82,13 +82,13 @@ function MyTeam() {
                     </div>
 
                     <div className="flex flex-col items-center justify-center">
-                    <h3 className="font-extrabold text-white">{team.name}</h3>
-                    <p className="text-[12px] text-gray-400">{team.title}</p>
+                    <h3 className="font-extrabold text-xl text-white">{team.name}</h3>
+                    <p className="text-sm text-gray-400">{team.title}</p>
                     </div>
 
                     <div className="flex items-center justify-center gap-2">
                         {team.socials.map((icon, index) => (
-                            <div key={index} className="w-[35px] h-[35px] border border-gray-400 text-gray-400 rounded-full flex items-center justify-center">
+                            <div key={index} className="w-[40px] h-[40px] border border-gray-400 text-gray-400 rounded-full flex items-center justify-center text-xl">
                                 {icon}
                             </div>
                         ))}

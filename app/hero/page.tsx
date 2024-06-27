@@ -8,6 +8,7 @@ import heromanon from "../assets/heromanon.png";
 import icon1 from "../assets/icon1.png";
 import icon2 from "../assets/icon2.png";
 import icon3 from "../assets/icon3.png";
+import illustrationleft from "../assets/download (29).png";
 import download4 from "../assets/download(4).png";
 import bg_project from "../assets/bg_project.png";
 import bg_project2 from "../assets/bg_project2.png";
@@ -18,6 +19,7 @@ import Carousel from "../Components/Carousel";
 import StatisticChart from "../Components/StatisticChart";
 import IgoProjects from "../Components/IgoProjects";
 import MyTeam from "../Components/MyTeam";
+import Clogo from "../Components/Clogo";
 
 function Example() {
   return (
@@ -34,15 +36,15 @@ function Example() {
 
         {/* Content */}
         <div className="mt-10 py-10  relative z-10 flex flex-col md:flex-row items-center ">
-          <div className="flex flex-col gap-3 items-start md:w-[60%]">
-            <h1 className="font-extrabold text-white text-4xl md:text-6xl">
+          <div className="flex flex-col gap-3 items-start md:w-[55%]">
+            <h1 className="font-extrabold text-white text-4xl md:text-7xl">
               Enter the gateway of Blockchain Gaming
             </h1>
             <p className=" text-white ">
               Visually and spatially connecting games in a seamless metaverse
               experience
             </p>
-            <button className="polygon text-[12px] bg-[#86FF00] px-5 py-3 font-extrabold">
+            <button className="polygon text-sm bg-[#86FF00] px-5 py-4 font-extrabold">
               EXPLORE IGO
             </button>
           </div>
@@ -79,12 +81,12 @@ function Example() {
         </div>
       </section>
 
-      <section className="bg-[#09121D] py-10 px-5">
+      <section className="bg-[#09121D] py-10 px-5 ">
         <h2 className="text-3xl md:text-5xl font-extrabold text-white text-center m-5 md:px-52">
           Featured IGO Projects Coming Soon
         </h2>
 
-        <div className="py-10 flex md:flex-row md:items-center  flex-col gap-10">
+        <div className="py-10 flex md:flex-row md:items-center   flex-col gap-10">
           <div className="relative">
             <Image
               src={download4}
@@ -94,21 +96,21 @@ function Example() {
               alt="wild-west"
             />
           </div>
-          <div className="glassbg flex flex-col gap-2 lg:absolute lg:right-[12%] lg:bg-[#09121D] shadow-md mx-auto border-[#2B323C]  p-5 w-[320px] rounded-lg">
-            <h3 className="font-extrabold text-xl 5 text-white">
+          <div className="glassbg flex flex-col gap-2 lg:absolute lg:right-[28%] lg:bg-[#09121D] shadow-md mx-auto border-[#2B323C]  px-5 py-8 w-[350px] rounded-lg">
+            <h3 className="font-extrabold text-xl text-white">
               Codyfight IGO
             </h3>
             <p className="text-gray-500 text-sm">
               {" "}
               e assumenda excepturi tempore illum nisi magni unde id quae odio?
             </p>
-            <div className="bg-[#86FF00] flex items-center justify-between  py-1 px-2 text-sm font-semibold rounded-md">
+            <div className="bg-[#86FF00] flex items-center justify-between  py-1 px-2 font-semibold rounded-md">
               <span className="text-black">Price: $0.4</span>
               <span className="text-black">Total sales: $4720</span>
             </div>
 
             <div className="mt-1">
-              <h4 className="text-white font-bold text-sm">Sale end in</h4>
+              <h4 className="text-white font-bold ">Sale end in</h4>
               <div className="flex  items-center justify-between mt-3">
                 <div className=" text-white border border-gray-600 flex items-center justify-center h-[40px] rounded-full w-[40px] font-semibold shadow-md p-6">
                   1
@@ -164,10 +166,10 @@ function Example() {
             <div className="group flex flex-col justify-center items-center gap-3  p-5 relative pb-16 overflow-hidden transition-colors duration-300">
               <Image
                 src={key}
-                className="w-[50px] h-full object-cover"
+                className="w-[70px] h-full object-cover"
                 alt="key"
               />
-              <h3 className="md:text-xl  font-extrabold text-white">Submit KYC</h3>
+              <h3 className="md:text-xl font-extrabold text-white">Submit KYC</h3>
               <p className="text-gray-400 text-sm text-center">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi
                 accusamus debitis iste libero
@@ -195,7 +197,7 @@ function Example() {
             <div className="group flex flex-col justify-center items-center gap-3  p-5 relative pb-16 overflow-hidden transition-colors duration-300">
               <Image
                 src={wallet}
-                className="w-[50px] h-full object-cover"
+                className="w-[70px] h-full object-cover"
                 alt="key"
               />
               <h3 className="md:text-xl font-extrabold text-white">Verify Wallet</h3>
@@ -226,7 +228,7 @@ function Example() {
             <div className="group flex flex-col justify-center items-center gap-3  p-5 relative pb-16 overflow-hidden transition-colors duration-300">
               <Image
                 src={coin}
-                className="w-[50px] h-full object-cover"
+                className="w-[70px] h-full object-cover"
                 alt="key"
               />
               <h3 className="md:text-xl font-extrabold text-white">Start Staking</h3>
@@ -291,7 +293,7 @@ function Example() {
       </section>
 
 
-      <section className="px-5 py-10 relative bg-[#171F29]">
+      <section className="px-5 py-10 relative bg-[#09121D]">
       <div className="absolute inset-0 z-[-1] backgroundb">
           <Image
             src={backImage}
@@ -304,7 +306,20 @@ function Example() {
       <h2 className="text-3xl md:text-5xl font-extrabold text-white text-center m-5 md:px-52">
       Our Partners
         </h2>
+<Clogo/>
+        </div>
 
+        <div className="mt-20">
+          <div className="">
+          <h3 className="text-white font-extrabold text-4xl">Launch On Risebot</h3>
+<p className="text-white ">Full support in project incubation</p>
+<button className="polygon font-extrabold bg-[#86FF00] mt-5 hover:bg-[#798DA3] px-5 py-3 ">
+          APPLY NOW
+        </button>
+<Image src={illustrationleft} className="slideIn mt-10" alt="cartoon moving left right"/>
+          </div>
+        
+        
         </div>
 
        

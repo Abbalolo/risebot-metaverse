@@ -72,6 +72,25 @@ transform: translateX(0);
     }
 }
 
+.slideIn {
+  
+    animation: 2s slideInLeft infinite linear;
+    /* color: ; */
+  }
+  
+  @keyframes slideInLeft {
+    from {
+       
+        transform: translateX(-2%);
+    }
+  
+    to {
+        transform: translateX(2%);
+    }
+  }
+  
+  
+
 .polygon {
     clip-path: polygon(14% 0, 91% 0, 100% 13%, 100% 99%, 10% 100%, 0 85%, 0 0);
 border-top-left-radius: 5px;

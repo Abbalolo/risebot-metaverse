@@ -11,17 +11,20 @@ function NavBar() {
   const [isCaret2, setIsCaret2] = useState(false);
 
   return (
-    <header className=" flex justify-between items-center p-3 fixed top-0 left-0 w-full  z-40">
+    <header className=" flex justify-between items-center p-5 fixed top-0 left-0 w-full  z-40">
       <Link href="/">
         <Image src={logo} width={100} height={100} alt="risebot logo" />
       </Link>
-
+      {isOpen && (
+        <div onClick={() => setIsOpen(false)} className="w-full h-screen absolute top-0 left-0 bg-[#ffffff00] z-30"></div>
+      )}
+  
       <nav
-        className={`text-black lg:text-white absolute bg-slate-50 top-14 left-0 w-full lg:flex lg:justify-center lg:shadow-none lg:bg-transparent lg:opacity-100 lg:translate-y-[0%] lg:static shadow-md transition-opacity  duration-500  ease-in-out${
+        className={`text-black lg:text-white absolute bg-slate-50 top-16 z-50 left-0 w-full lg:flex lg:justify-center lg:shadow-none lg:bg-transparent lg:opacity-100 lg:translate-y-[0%] lg:static shadow-md transition-opacity  duration-500  ease-in-out${
           isOpen ? " opacity-100 visible" : " translate-y-[-150%] opacity-0 "
         }`}
       >
-        <ul className="flex md:flex-row flex-col text-sm ">
+        <ul className="flex md:flex-row flex-col">
           <li className="border md:border-none transition-all duration-300 py-2 px-4">
             <Link className="hover:text-[#7FF200]" href="/">
               Home
@@ -75,7 +78,7 @@ function NavBar() {
           onClick={() => {setIsOpen(!isOpen)
            
           }}
-          className="text-[20px] transition-all duration-300 cursor-pointer lg:hidden"
+          className="text-[25px] transition-all duration-300 cursor-pointer lg:hidden"
         >
           {isOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
         </button>

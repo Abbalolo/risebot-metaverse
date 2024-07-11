@@ -73,9 +73,8 @@ transform: translateX(0);
 }
 
 .slideIn {
-  
-    animation: 2s slideInLeft infinite linear;
-    /* color: ; */
+    animation: slideInLeft 5s linear infinite;
+
   }
   
   @keyframes slideInLeft {

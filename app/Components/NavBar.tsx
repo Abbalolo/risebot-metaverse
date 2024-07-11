@@ -3,15 +3,28 @@ import { RxCaretUp, RxCaretDown } from "react-icons/rx";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../assets/download.png";
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isCaret, setIsCaret] = useState(false);
   const [isCaret2, setIsCaret2] = useState(false);
 
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <header className=" flex justify-between items-center p-5 fixed top-0 left-0 w-full  z-40">
+    <header className={`transition-all duration-200 flex justify-between items-center p-5 fixed top-0 left-0 w-full  z-40 ${scrolled ? 'bg-black' : ''}`}>
       <Link href="/">
         <Image src={logo} width={100} height={100} alt="risebot logo" />
       </Link>

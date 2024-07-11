@@ -46,7 +46,7 @@ const logos: LogoType[] = [
 
 const Clogo: React.FC = () => {
   return (
-    <div className='grid grid-cols-2 place-items-center md:flex md:flex-wrap gap-3 mt-10'>
+    <div className='grid grid-cols-2 place-items-center md:flex md:flex-wrap gap-3 mt-20 md:justify-center'>
       {logos.map((logo) => (
         <Image
           key={logo.id}

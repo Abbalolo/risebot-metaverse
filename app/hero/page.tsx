@@ -24,7 +24,7 @@ import Clogo from "../Components/Clogo";
 function Example() {
   return (
     <>
-      <section className=" px-5 py-10 relative w-full h-full flex flex-col justify-center items-center">
+      <section className=" px-5 py-20 relative w-full h-full flex flex-col justify-center items-center">
         {/* Background Image */}
         <div className="absolute inset-0 z-[-1] backgroundb">
           <Image
@@ -86,7 +86,7 @@ function Example() {
           Featured IGO Projects Coming Soon
         </h2>
 
-        <div className="py-10 flex md:flex-row md:items-center   flex-col gap-10">
+        <div className="py-10 md:ml-20 flex md:flex-row md:items-center   flex-col gap-10">
           <div className="relative">
             <Image
               src={download4}
@@ -96,7 +96,7 @@ function Example() {
               alt="wild-west"
             />
           </div>
-          <div className="glassbg flex flex-col gap-2 lg:absolute lg:right-[28%] lg:bg-[#09121D] shadow-md mx-auto border-[#2B323C]  px-5 py-8 w-[350px] rounded-lg">
+          <div className="glassbg flex flex-col gap-2 lg:absolute lg:right-[18%] lg:bg-[#09121D] shadow-md mx-auto border-[#2B323C]  px-5 py-8 w-[400px] rounded-lg">
             <h3 className="font-extrabold text-xl text-white">Codyfight IGO</h3>
             <p className="text-gray-500 text-sm">
               {" "}
@@ -151,7 +151,7 @@ function Example() {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center md:py-20 py-10">
           <h3 className="text-3xl md:text-4xl font-extrabold text-white text-center m-5  md:px-[320px]">
             Easy To Join IGO With 3 Steps
           </h3>
@@ -262,7 +262,7 @@ function Example() {
         <IgoProjects />
       </section>
 
-      <section className="px-5 py-10 relative bg-[#171F29]">
+      <section className="px-5 py-10 md:px-28 md:py-16 relative bg-[#171F29]">
         <h2 className="text-3xl md:text-5xl font-extrabold text-white text-center m-5 md:px-52">
           Meet The Team
         </h2>
@@ -287,8 +287,12 @@ function Example() {
         </div>
 
         <div className="mt-20 md:flex md:justify-between md:items-center">
-          <div className="">
-            <h3 className="text-white font-extrabold text-4xl md:text-7xl">
+          <div className=" absolute  flex justify-center items-center">
+          <Image src={bg_project2} className=" w-[90%] rounded-lg " alt="bg"/>
+          </div>
+         
+          <div className="md:px-20">
+            <h3 className="text-white font-extrabold text-4xl md:text-5xl">
               Launch On Risebot
             </h3>
             <p className="text-white mt-3">Full support in project incubation</p>

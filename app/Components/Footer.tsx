@@ -7,9 +7,9 @@ import { SlSocialPintarest, SlSocialReddit, SlSocialSteam, SlSocialStumbleupon, 
 
 function Footer() {
   return (
-    <footer className="bg-[#09121D] flex flex-col gap-5  md:py-20 py-10">
+    <footer className="bg-[#09121D] flex flex-col gap-5  md:py-20 py-10 px-5 md:px-10">
 
-<div className="flex flex-col md:flex-row divide-x-2 divide-gray-800 md:justify-around ">
+<div className="flex flex-col md:flex-row md:divide-x-2 divide-gray-800 md:justify-around">
         <div className="flex flex-col gap-2">
           <Link href="/">
             <Image src={logo} width={200} height={200} alt="risebot logo" />
